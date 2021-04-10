@@ -1,0 +1,21 @@
+# Application
+spring:
+  application:
+    name: authService
+# Database
+  jpa:
+    database-platform: ${env.JDBC_DIALECT}
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  datasource:
+    url: ${env.JDBC_URL}
+    driver-class-name: ${env.JDBC_DRIVER}
+    username: ${env.JDBC_USERNAME}
+    password: ${env.JDBC_PASSWORD}
+# Custom
+  custom:
+    secret_salt_key: ${env.AUTH_SECRET}
+
+server:
+  port: 8090
