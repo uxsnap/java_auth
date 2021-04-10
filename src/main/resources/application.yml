@@ -9,7 +9,7 @@ spring:
       ddl-auto: update
     show-sql: true
   datasource:
-    url: ${env.JDBC_URL}
+    url: ${env.DATABASE_URL}
     driver-class-name: ${env.JDBC_DRIVER}
     username: ${env.JDBC_USERNAME}
     password: ${env.JDBC_PASSWORD}
