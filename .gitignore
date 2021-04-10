@@ -34,4 +34,5 @@ build/
 ### VS Code ###
 .vscode/
 
-src/main/resources/**
+### Local Configuration ###
+.env
